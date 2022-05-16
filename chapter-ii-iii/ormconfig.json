@@ -5,9 +5,9 @@
   "username": "docker",
   "password": "root",
   "database": "rs_ignite_nodejs",
-  "entities": ["./src/modules/**/entities/*.ts"],
-  "migrations": ["./src/database/migrations/*.ts"],
+  "entities": ["src/modules/**/entities/*.ts"],
+  "migrations": ["src/database/migrations/*.ts"],
   "cli": {
-    "migrationsDir": "./src/database/migrations"
+    "migrationsDir": "src/database/migrations"
   }
 }

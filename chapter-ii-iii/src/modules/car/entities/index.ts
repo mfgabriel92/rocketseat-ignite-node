@@ -1,4 +1,4 @@
-export { ICategory } from "./ICategory";
+export { ICategory } from "./dtos/ICategory";
 export { Category } from "./Category";
-export { ISpecification } from "./ISpecification";
+export { ISpecification } from "./dtos/ISpecification";
 export { Specification } from "./Specification";

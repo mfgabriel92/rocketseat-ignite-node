@@ -1,3 +1,11 @@
-import { createConnection } from "typeorm";
+import { createConnection, getConnectionOptions } from "typeorm";
 
-createConnection();
+interface IOptions {
+  host: string;
+}
+
+getConnectionOptions().then((o) => {
+  const options = o as IOptions;
+  options.host = "postgres-ignite";
+  createConnection({ ...o });
+});

@@ -1,8 +1,10 @@
 import { ISpecification, Specification } from "../entities";
 
 interface ISpecificationRepository {
-  findAll(): Specification[];
-  addSpecification(specification: ISpecification): Specification;
+  findAll(): Promise<Specification[]>;
+  addSpecification(
+    specification: ISpecification
+  ): Promise<Specification | undefined>;
 }
 
 export { ISpecificationRepository };
